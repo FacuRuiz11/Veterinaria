@@ -7,28 +7,12 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in);
 
-        /**
-         Animal Perro1 = new Perro();
-
-         System.out.println("Ingrese su nombre: ");
-         Perro1.setNombre(teclado.nextLine());
-
-         System.out.println(Perro1.nombre);
-
-         Gato gato1 = new Gato();
-
-         System.out.println("Ingrese su nombre: ");
-         Perro1.setNombre(teclado.nextLine());
-         System.out.println("Ingrese su color: ");
-         gato1.setColor((teclado.nextLine()));
-         System.out.println(gato1.color);
-         **/
         ArrayList<Animal> animales = new ArrayList<>();
 
         int opcion = 0;
         do {
-            System.out.printf("Seleccione animal o salir\n");
-            System.out.printf("1.Perro 2.Gato 3.Salir: ");
+            System.out.println("Seleccione animal o salir\n");
+            System.out.println("1.Perro 2.Gato 3.Salir: ");
             opcion = teclado.nextInt();
             teclado.nextLine();
             if (opcion == 1) {
