@@ -11,7 +11,7 @@ public class Main {
 
         int opcion = 0;
         do {
-            System.out.println("Seleccione animal o salir\n");
+            System.out.println("Seleccione animal a agregar");
             System.out.println("1.Perro 2.Gato 3.Salir: ");
             opcion = teclado.nextInt();
             teclado.nextLine();
@@ -24,6 +24,7 @@ public class Main {
                 System.out.println("Ingrese raza");
                 p.setRaza(teclado.nextLine());
                 animales.add(p);
+                System.out.printf("\n");
             }
             if (opcion == 2) {
                 Gato p = new Gato();
@@ -34,10 +35,13 @@ public class Main {
                 System.out.println("Ingrese color");
                 p.setColor(teclado.nextLine());
                 animales.add(p);
+                System.out.printf("\n");
             }
         }while(opcion != 3) ;
 
-            System.out.printf(animales.toString());
+            System.out.printf(animales.toString()+"\n");
+            System.out.printf("Cantidad de perros:" + Perro.contador + "\n");
+            System.out.printf("Cantidad de gatos:" + Gato.contador);
 
         }
     }
