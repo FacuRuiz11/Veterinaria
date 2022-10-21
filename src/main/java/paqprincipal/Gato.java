@@ -11,14 +11,6 @@ public class Gato extends Animal{
         this.color = color;
     }
 
-    public static int getContador() {
-        return contador;
-    }
-
-    public static void setContador(int contador) {
-        Gato.contador = contador +1;
-    }
-
     public Gato() {
         Gato.contador++;
     }
