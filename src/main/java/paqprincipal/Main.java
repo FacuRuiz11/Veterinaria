@@ -17,22 +17,22 @@ public class Main {
             teclado.nextLine();
             if (opcion == 1) {
                 Perro p = new Perro();
-                System.out.println("Ingrese nombre: ");
+                System.out.printf("Ingrese nombre: ");
                 p.setNombre(teclado.nextLine());
-                System.out.println("Ingrese peso");
+                System.out.printf("Ingrese peso: ");
                 p.setPeso(Float.parseFloat(teclado.nextLine()));
-                System.out.println("Ingrese raza");
+                System.out.printf("Ingrese raza: ");
                 p.setRaza(teclado.nextLine());
                 animales.add(p);
                 System.out.printf("\n");
             }
             if (opcion == 2) {
                 Gato p = new Gato();
-                System.out.println("Ingrese nombre");
+                System.out.printf("Ingrese nombre: ");
                 p.setNombre(teclado.nextLine());
-                System.out.println("Ingrese peso");
+                System.out.printf("Ingrese peso: ");
                 p.setPeso(Float.parseFloat(teclado.nextLine()));
-                System.out.println("Ingrese color");
+                System.out.printf("Ingrese color: ");
                 p.setColor(teclado.nextLine());
                 animales.add(p);
                 System.out.printf("\n");
